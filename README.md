@@ -34,4 +34,11 @@ scp -i "devop_bootcamp.pem"  -r C:/Users/Jack/Desktop/app ubuntu@ec2-52-212-118-
 - verify the app folder has installed using `ls` to see the app folder
 - the web server and reverse proxy can now be configured using the steps found here: https://github.com/jackingham/vagrant
 
+## Creating a db machine
+
+- First make a new instance with the same settings as before but with a new seecurity group as follows:
+![image](https://user-images.githubusercontent.com/32297246/122034228-34a0b500-cdc9-11eb-8ba5-b19e72d537b4.png)
+
+- SSH into the db follow the steps here on the db machine to set up mongo: https://github.com/jackingham/multiMachineVagrant
+- Now the `/posts` page should work once the app is running (again the db may need to be seeded as in link above)
 
